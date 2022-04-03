@@ -1,21 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 
-const Section = () => {
+const Section = (props) => {
+  const { title, description, spanText, leftBtn, rightBtn, backgroundImg } =
+    props;
   return (
     <>
-      <Wrap>
+      <Wrap bgImg={backgroundImg}>
         <ItemText>
-          <h1>Model S</h1>
+          <h1>{title}</h1>
           <p>
-            Order Online for <span>Touchless Delivery</span>
+            {description} <span>{spanText}</span>
           </p>
         </ItemText>
 
         <Buttons>
           <BtnGroup>
-            <LeftBtn>Custom Order</LeftBtn>
-            <RightBtn>Existing Inventory</RightBtn>
+            <LeftBtn>{leftBtn}</LeftBtn>
+            <RightBtn>{rightBtn}</RightBtn>
           </BtnGroup>
 
           <DownArrow src="/images/down-arrow.svg" />
@@ -31,7 +33,7 @@ export default Section;
 const Wrap = styled.div`
   height: 100vh;
   width: 100vw;
-  background-image: url("/images/model-s.jpg");
+  background-image: ${(props) => `url('/images/${props.bgImg}')`};
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

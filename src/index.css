@@ -6,11 +6,11 @@
   color: #393c41;
   box-sizing: border-box;
   font-family: "Gotham", sans-serif;
-  overflow: hidden;
 }
 
 body {
   width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
