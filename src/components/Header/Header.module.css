@@ -1,0 +1,45 @@
+.container {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0 24px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.menu p {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0 10px;
+  text-transform: capitalize;
+  flex-wrap: nowrap;
+}
+
+.rightMenu {
+  display: flex;
+  align-items: center;
+}
+
+.rightMenu p {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 10px;
+  text-transform: capitalize;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+}

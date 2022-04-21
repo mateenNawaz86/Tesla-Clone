@@ -41,6 +41,10 @@ span:hover::after {
   background-color: #000;
 }
 
+a {
+  text-decoration: none;
+}
+
 @keyframes animateDown {
   0%,
   20%,

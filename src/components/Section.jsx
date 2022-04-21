@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Section = (props) => {
   const { title, description, spanText, leftBtn, rightBtn, backgroundImg } =
     props;
+
   return (
     <>
       <Wrap bgImg={backgroundImg}>
